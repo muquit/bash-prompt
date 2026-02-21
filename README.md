@@ -56,7 +56,7 @@ Set it to an empty string to disable it:
 ➤ echo "" > ~/.bash_prompt_decor.txt
 ```
 ## Unicode symbols
-[w3schools utf-8 charsets page](https://www.w3schools.com/charsets/) page has listing of various unicode symbols.
+[w3schools utf-8 charsets page](https://www.w3schools.com/charsets/) has listing of various unicode symbols.
 # Author
 This is not my original work. Most of the prompt script was collected from 
 the Internet many years ago, with small updates here and there. The one 
