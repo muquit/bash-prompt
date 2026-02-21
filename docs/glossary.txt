@@ -1,0 +1,4 @@
+SCREENSHOT ![alt bash prompt](images/bash_prompt.png "git aware bash prompt")
+RELEASES    [Releases](https://github.com/muquit/bash-prompt/releases)
+MULTIPLE    [multiple-github-accounts](https://github.com/muquit/multiple-github-accounts)
+SYMBOLS     [w3schools utf-8 charsets page](https://www.w3schools.com/charsets/)
