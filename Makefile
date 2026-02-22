@@ -6,9 +6,11 @@ README = ./README.md
 	
 .PHONY: docs
 docs:
-	$(MARKDOWN_TOC) -i $(INPUT) -o $(README) \
+	@echo "Generating README.md with TOC ..."
+	@$(MARKDOWN_TOC) -i $(INPUT) -o $(README) \
         --glossary $(GLOSSARY_FILE) -f
-	$(MARKDOWN_TOC) -no-credit -i docs/ChangeLog.md \
+	@Echo "Generating ChangeLog.md ..."
+	@$(MARKDOWN_TOC) -no-credit -i docs/ChangeLog.md \
 		-o ./ChangeLog.md --glossary $(GLOSSARY_FILE) -f
 
 

@@ -24,6 +24,13 @@ the `install.sh` before running it.
 ➤ ./install.sh
 ```
 If `~/.bash_prompt.sh` already exists, you will be asked whether to overwrite it.
+The install script will append the following to the `~/.bashrc` file if it does not
+exist. Do not forget to `source ~/.bashrc` or log out and log back in to see
+the prompt.
+```bash
+# bash-prompt
+[[ -f ~/.bash_prompt.sh ]] && source ~/.bash_prompt.sh
+```
 
 # Screenshot
 Here is a sample prompt.
@@ -34,13 +41,13 @@ Here is a sample prompt.
 * The second prompt is showing **main** is the branch and **muquit** is the username
 
 # Customization
-The decoration symbol appears to the left of the `➤` arrow in the prompt in the prompt. The default is `★ `.
+The decoration symbol appears to the left of the `➤` arrow in the prompt. The default is `★ `.
 To use a different character, create `~/.bash_prompt_decor.txt` with your preferred Unicode symbol:
 ```bash
 ➤ echo "λ" > ~/.bash_prompt_decor.txt
 ```
 
-I use Unicode symbols  in prompt to easily identify which system I'm 
+I use Unicode symbols  in the prompt to easily identify which system I am
 on. Of course your terminal must support Unicode.
 
 Set it to an empty string to disable it:
@@ -54,3 +61,5 @@ This is not my original work. Most of the prompt script was collected from
 the Internet many years ago, with small updates here and there. The one 
 addition of my own is the `parse_git_user()` function, written while working 
 on @MULTIPLE@.
+# See Also
+* @MULTIPLE@ - How to use multiple github accounts from a single machine

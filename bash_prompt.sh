@@ -19,17 +19,19 @@
 PROMPT_DECORATOR="★"
 # To override, add any Unicode character to ~/.bash_prompt_decor.txt
 PROMPT_DECOR_FILE="$HOME/.bash_prompt_decor.txt"
-[[ -f "$PROMPT_DECOR_FILE" ]] && PROMPT_DECORATOR=$(cat "$PROMPT_DECOR_FILE")
+[[ -f "$PROMPT_DECOR_FILE" ]] && PROMPT_DECORATOR=$(< "$PROMPT_DECOR_FILE")
 
 parse_git_branch() {
     git branch --no-color 2>/dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
 
+# If not in a git repo, git config returns 1 and nothing is echoed
 parse_git_user() {
     git rev-parse --is-inside-work-tree &>/dev/null || return
     local name
     name=$(git config user.name 2>/dev/null)
-    [[ -n "$name" ]] && echo "‹${name}›"
+    [[ -z "$name" ]] && return
+    echo "‹${name}›"
 }
 
 set_bash_prompt() {
