@@ -38,17 +38,17 @@ Here is a sample prompt.
 
 ![alt bash prompt](images/bash_prompt.png "git aware bash prompt")
 
-* The first prompt is not in a git repo, hence there is no git branch or username
+* The first prompt is not in a git repo; hence there is no git branch or username
 * The second prompt is showing **main** is the branch and **muquit** is the username
 
 # Customization
-The decoration symbol appears to the left of the `➤` arrow in the prompt in the prompt. The defaults is `★ `.
+The decoration symbol appears to the left of the `➤` arrow in the prompt in the prompt. The default is `★ `.
 To use a different character, create `~/.bash_prompt_decor.txt` with your preferred Unicode symbol:
 ```bash
 ➤ echo "λ" > ~/.bash_prompt_decor.txt
 ```
 
-I use unicode symbols  in prompt to easily identify which system I'm 
+I use Unicode symbols  in prompt to easily identify which system I'm 
 on. Of course your terminal must support Unicode.
 
 Set it to an empty string to disable it:
@@ -56,7 +56,7 @@ Set it to an empty string to disable it:
 ➤ echo "" > ~/.bash_prompt_decor.txt
 ```
 ## Unicode symbols
-[w3schools utf-8 charsets page](https://www.w3schools.com/charsets/) has listing of various unicode symbols.
+[w3schools utf-8 charsets page](https://www.w3schools.com/charsets/) has a list of various unicode symbols.
 # Author
 This is not my original work. Most of the prompt script was collected from 
 the Internet many years ago, with small updates here and there. The one 
