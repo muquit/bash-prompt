@@ -6,6 +6,7 @@
 
 VERSION=$(cat VERSION)
 PACKAGE="bash-prompt-${VERSION}"
+CHECKSUM_FILE="${PACKAGE}-checksum.txt"
 ARCHIVE="${PACKAGE}.tar.gz"
 TDIR="/tmp/${PACKAGE}"
 CP="/bin/cp -fv"
@@ -25,4 +26,6 @@ ${CP} VERSION README.md install.sh bash_prompt.sh "${TDIR}"
 tar -czf "${ARCHIVE}" -C /tmp "${PACKAGE}"
 remove_tdir
 echo "Done: ${ARCHIVE}"
+sha256sum ${ARCHIVE} > ${CHECKSUM_FILE}
 /bin/ls -ltr ${ARCHIVE}
+/bin/ls -ltr ${CHECKSUM_FILE}
