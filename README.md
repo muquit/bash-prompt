@@ -40,6 +40,19 @@ the prompt.
 # bash-prompt
 [[ -f ~/.bash_prompt.sh ]] && source ~/.bash_prompt.sh
 ```
+Or clone the repo and install. Example:
+```bash
+git clone https://github.com/muquit/bash-prompt.git
+cd bash-prompt
+./install.sh
+```
+Then source `~/.bashrc` or ``~/.bash_prompt.sh`
+```bash
+source ~/.bashrc
+or 
+source ~/.bash_prompt.sh
+```
+Look at [Customization](#customization) section on how to use custom Unicode symbols or not
 
 # Screenshot
 Here is a sample prompt.
@@ -74,4 +87,4 @@ on [multiple-github-accounts](https://github.com/muquit/multiple-github-accounts
 * [multiple-github-accounts](https://github.com/muquit/multiple-github-accounts) - How to use multiple github accounts from a single machine
 
 ---
-<sub>TOC is created by https://github.com/muquit/markdown-toc-go on Feb-22-2026</sub>
+<sub>TOC is created by https://github.com/muquit/markdown-toc-go on Feb-23-2026</sub>

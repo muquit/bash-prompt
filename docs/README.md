@@ -31,6 +31,19 @@ the prompt.
 # bash-prompt
 [[ -f ~/.bash_prompt.sh ]] && source ~/.bash_prompt.sh
 ```
+Or clone the repo and install. Example:
+```bash
+git clone https://github.com/muquit/bash-prompt.git
+cd bash-prompt
+./install.sh
+```
+Then source `~/.bashrc` or ``~/.bash_prompt.sh`
+```bash
+source ~/.bashrc
+or 
+source ~/.bash_prompt.sh
+```
+Look at @CUSTOMIZE@ section on how to use custom Unicode symbols or not
 
 # Screenshot
 Here is a sample prompt.
