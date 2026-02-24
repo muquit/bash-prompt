@@ -37,7 +37,7 @@ git clone https://github.com/muquit/bash-prompt.git
 cd bash-prompt
 ./install.sh
 ```
-Then source `~/.bashrc` or ``~/.bash_prompt.sh`
+Then source `~/.bashrc` or `~/.bash_prompt.sh`
 ```bash
 source ~/.bashrc
 or 
